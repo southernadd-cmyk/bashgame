@@ -1,0 +1,96 @@
+
+
+    .cmd {
+    --original-color: #08C952;
+    --original-background: var(
+    --background);
+}
+
+.terminal {
+ /*   --color: green;
+   --background: white;
+ */   --link-color: lightblue;
+      --size: 1.2;
+}
+@media screen and (min-width: 1200px) {
+    :root {
+        --size: 1.4;
+    }
+}
+
+@media only screen and (max-width:600px) {
+   :root {
+        zoom:0.6;
+    }
+}
+[class^="termly-styles-logo"] {
+  display: none!important;
+}
+[class^="termly-styles-message"] span {
+  font-family: 'VT323', monospace!important;
+}
+
+[class*="termly-styles-root-"][class*="termly-styles-termly-tooltip-"][class*="termly-styles-bottom_right-"][class*="t-consentPrompt"] {
+border:#fff solid 2px!important;
+}
+
+
+[class^="termly-styles"] {
+  font-family: 'VT323', monospace!important;
+}
+
+.btn {
+    float:right;
+    	font-family: 'VT323', monospace ;
+font-size:0.65rem;
+	background: #005800;
+	border-bottom: 6px inset rgba(0,0,0,.5);
+	border-left: 6px inset rgba(0,0,0,.5);
+	border-right: 6px inset rgba(255,255,255,.5);
+	border-top: 6px inset rgba(255,255,255,.5);
+	box-sizing: border-box;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	margin: 1rem;
+	min-width: 200px;
+	padding: .5rem;
+	text-transform: uppercase;
+	width: auto;
+
+	&:focus,
+	&:hover {
+		background: #006800;
+	}
+}
+.wincont {
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+.termwin {
+  flex: 1 1 auto;
+  overflow: auto;
+}
+
+.picwin {
+      display: flex;
+  align-items: center;
+    justify-content: center;
+  flex: 0 0 auto;
+  width: 40vw;
+  overflow: hidden;
+  text-align: center;
+  border:1vw solid #ccc;
+  max-height:80vh;
+  margin:2vw;
+
+}
+
+
+.wincont pre {
+  display: inline-block;
+  text-align: left;
+ }
