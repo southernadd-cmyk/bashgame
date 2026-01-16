@@ -1,0 +1,76 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unix Bash Terminal</title>
+        <link rel="stylesheet" href="static/css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="static/js/script.js"></script>
+    </head>
+    <body>
+
+        <div id="terminal">
+            <pre id="image">
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⢠⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⢠⣴⣾⢿⣷⣦⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⡇⠀⢀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠀⠀⠀⠀
+⠸⣿⠀⠀⠈⢻⣷⠰⠇⠀⠀⠀⠀⠀⣷⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⠹⣧⠀⣾⢻⡄⠀⢀⣀⡀⢰⣤⢦⡄⢀⡇⠀⠀⢸⡇⠀⠀⠀
+⠀⢿⣇⠀⢀⣾⠇⠀⡆⠀⢀⡶⠒⢸⣿⡴⠏⠀⠀⠀⢠⡄⠀⢀⠀⣾⠀⠀⠀⣿⠀⢹⢰⡿⢰⣧⢠⡞⢻⡇⢸⣧⠞⢁⣼⣥⣀⠀⠈⣷⣀⡤⠖
+⠀⠈⣿⣿⣿⣁⠀⠀⢻⠀⣿⠀⠀⠀⣿⢧⡀⠀⠀⠀⡿⢧⠿⢾⣴⣇⠀⠀⢸⡟⠀⠘⢿⠁⠈⡟⠸⢧⣼⠟⢠⠉⢷⠀⢸⠀⠀⢀⣰⡿⠋⠀⠀
+⠀⠀⢻⡆⠈⠛⢻⣆⠘⠀⠙⠏⠉⠀⠇⠈⢿⡄⠀⠀⠁⠈⠀⠀⠈⠉⠀⠀⢘⠃⠀⠀⠀⠀⠀⢿⠀⠀⠀⠀⠀⠀⠸⠀⡼⠀⢀⡾⠋⠀⠀⠀⠀
+⠀⠀⠘⣧⠀⠀⠀⠈⠳⡄⠀⠀⠀⠀⠀⠀⠈⠓⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠀⠀⠀⠀⠀⠀⠘⠇⠀⠀⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠙⠀⠀⠀⠀⠀⠙⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+
+
+            </pre>
+            <p class="intro">You find yourself in a strange place, a unix BASH terminal.</p>
+            <p class="intro">Explore this world using BASH commands.</p>
+            <div class="intro">
+
+<p>Look at your surroundings with the command "ls".</p>
+<p>Move to a new location with the command "cd \<foldername\>" </p>
+<p>You can backtrack with the command "cd ..". </p>
+<p>Read txt files in the world with the command "cat \<filename\>"  </p>
+<p>If you forget where you are, type "pwd" </p>
+
+<p>Go ahead, explore. We hope you enjoy what you find. Do ls as your first command.</p>
+
+            </div>
+
+
+            <div id="input-output">
+                <p id="output"></p>
+                <p id="textfile"></p>
+                <form autocomplete="off" id="input-form">
+                  <div id="bash">
+                    <p>MeeSeeks Bash V0.8</p>
+                    <p>Pre-release Beta Console</p>
+                  </div>
+
+                    <input type="text" id="command-input" autofocus>
+                    <input type="hidden" id="current-directory" value="/">
+                    <input type="submit" value="Enter">
+                   <div id="prompt">
+                    <p>~$</p>
+                  </div>
+                </form>
+
+            </div>
+        </div>
+
+
+<script type="text/javascript">
+
+
+      $(function () {
+        $("#command-input").bind("focusout", function (e) {
+            e.preventDefault();
+            $(this).focus();
+        });
+      });
+
+
+</script>
+
+    </body>
+</html>
