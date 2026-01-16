@@ -241,7 +241,7 @@ Great, just great Morty. My vacation's officially ruined. Thanks a lot, guys. Re
 <br/> First things first, go to the root directory and create a new folder called 'escape_pod' using <span style='color:#22ff22'>mkdir</span>. It's simple Morty, just type <span style='color:#22ff22'>mkdir escape_pod</span> when you're in the root directory.
 <br/> Once that's done, create a file called 'morty.txt' inside that folder. Got it? Then, and only then, delete everything else using 'rm'. Just type <span style='color:#22ff22'>rm name_of_file_or_folder</span> and get rid of it all! Except for the escape pod, obviously.
 <br/> Oh, and make sure to move me into the pod as well using <span style='color:#22ff22'>mv</span>. And make sure the pod and text files are there BEFORE you delete everything else.
-<br/> The guy who coded this is a lazy piece of slurm Morty, so 'rm' only works with absolute paths. Ask around to find out what that means.
+<br/> The guy who coded this is a lazy slurm Morty, so 'rm' only works with absolute paths. Ask around to find out what that means.
 <br/> Good luck Morty, you're gonna need it.
 """,
     'rickbot.txt': """
